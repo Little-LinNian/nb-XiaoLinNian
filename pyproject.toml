@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "first"
+name = "nb-XiaoLinNian"
 version = "0.1.0"
-description = "first"
+description = "nb-XiaoLinNian"
 authors = []
 readme = "README.md"
 
@@ -14,8 +14,8 @@ nb-cli = "^0.1.0"
 nonebot-test = "^0.1.0"
 
 [nonebot.plugins]
-plugins = []
-plugin_dirs = ["first/plugins"]
+plugins = ["nonebot_plugin_picsearcher"]
+plugin_dirs = ["src/plugins"]
 
 [build-system]
 requires = ["poetry>=0.12"]
