@@ -14,7 +14,7 @@ nb-cli = "^0.1.0"
 nonebot-test = "^0.1.0"
 
 [nonebot.plugins]
-plugins = ["nonebot_plugin_picsearcher"]
+plugins = ["nonebot_plugin_picsearcher", "nonebot_plugin_arcaea"]
 plugin_dirs = ["src/plugins"]
 
 [build-system]
