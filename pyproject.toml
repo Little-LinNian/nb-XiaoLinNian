@@ -9,12 +9,13 @@ readme = "README.md"
 python = "^3.7"
 nonebot2 = "^2.0.0.a1"
 nb-cli = "^0.1.0"
+aiofiles = "^0.7.0"
 
 [tool.poetry.dev-dependencies]
 nonebot-test = "^0.1.0"
 
 [nonebot.plugins]
-plugins = ["nonebot_plugin_picsearcher", "nonebot_plugin_arcaea"]
+plugins = ["nonebot_plugin_picsearcher", "nonebot_plugin_arcaea", "nonebot_hk_reporter"]
 plugin_dirs = ["src/plugins"]
 
 [build-system]
