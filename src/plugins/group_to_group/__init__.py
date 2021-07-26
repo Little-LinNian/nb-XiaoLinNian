@@ -10,7 +10,7 @@ global_config = get_driver().config
 config = Config(**global_config.dict())
 global lib
 lib = {}
-bind_parser = on_command("send bind",rule=to_me(),priority=2)
+bind_parser = on_command("send bind",rule=to_me())
 @bind_parser.got("group","你想绑定哪个群捏?")
 async def handle_city(bot: Bot, event: Event):
     msg = event.get_message().extract_plain_text()
@@ -21,7 +21,7 @@ async def handle_city(bot: Bot, event: Event):
     except:
         await bind_parser.reject("不对,这不是一个群号")
 
-send_parser = on_command("send ",rule=to_me(),priority=1)
+send_parser = on_command("send ",rule=to_me())
 @send_parser.handle()
 async def handle_first_receive(bot: Bot, event: Event):
     if not event.get_user_id() in lib.keys():

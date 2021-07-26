@@ -23,7 +23,7 @@ except ImportError:
 
 
 # ==========================================
-RESOURCES_BASE_PATH = fr"{os.getcwd()}\src\plugins\sign_in\sign-in"
+RESOURCES_BASE_PATH = str(Path(fr"{os.getcwd()}/src/plugins/sign_in/sign-in"))
 
 # ==========================================
 
